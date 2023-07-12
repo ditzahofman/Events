@@ -1,0 +1,11 @@
+.notFound  {
+    position: relative;
+
+}
+a{
+    position: absolute;
+    top: 20%;
+    z-index: 1000;
+    font-weight: bold;
+    right: 37%;
+}

@@ -1,0 +1,38 @@
+
+.event{
+    position: relative;
+   left: 15%;
+   top: 50%;
+    width: 900px;
+    height:500px;
+    background-image: url("../../../../assets/images/events.jpg");
+   background-size: cover;
+border-radius: 12%;
+filter: blur(5px)
+}
+p{
+   
+    position: absolute;
+    color: aliceblue;
+     left: 20%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    bottom: 20%;
+    border: 10px solid white;
+}
+
+h1{
+    padding: 2%;
+  background-color: rgb(211, 171, 68);
+    position: absolute;
+      top: 30%;
+    font-size: 100px;
+    color: aliceblue;
+    left: 20%;
+    text-decoration: 'underline';
+    text-shadow:  4px black;
+}
+hr{
+font-weight: 900;
+}

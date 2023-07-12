@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="button">
+        <button (click)="deleteEvent()" (click)="onDelete.emit()"><b>X</b></button>
+        </div>
+        <br>
+    <div class="description">
+        <h3>{{event.description}}</h3>
+    </div>
+    <div class="date">
+        <p><b>{{ event.date | date: 'MMM d, y, h:mm ' }}</b></p>
+
+    </div>
+    <div class="adress">
+       {{event.adress}}
+    </div>
+    <div class="participants">
+        Participants:{{event.participants}}
+     </div>
+     <div *ngIf="IfPass(event.date)" class="passed">
+        Passed
+     </div>
+     <div *ngIf="!IfPass(event.date)">
+        has not passed
+     </div>    
+</div>

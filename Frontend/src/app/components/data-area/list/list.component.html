@@ -1,0 +1,41 @@
+<div>
+    <select (change)="displayEvents($event)">
+        <option selected disabled value="">Select Event Type</option>
+        <option *ngFor="let t of eventsTypes" [value]="t._id">{{t.eventTypeName}}</option>
+    </select>
+
+    <br />
+    <br />
+
+    <button (click)="toggleView()" title="{{ isTableView ? 'Switch to Card View' : 'Switch to Table View' }}">
+        <span *ngIf="isTableView">📄 Card mode </span>
+        <span *ngIf="!isTableView"> 📅Table mode</span>
+    </button>
+
+    <br />
+    <div *ngIf="isTableView">
+        <table *ngIf="events.length>0">
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Adress</th>
+                <th>Participants</th>
+                <th>Is passed?</th>
+                <th>Delete</th>
+            </tr>
+            <tr *ngFor="let e of events">
+                <td>{{ e.date | date: 'dd/MM/yyyy HH:mm' }}</td>
+                <td>{{e.description}}</td>
+                <td>{{e.adress}}</td>
+                <td>{{e.participants}}</td>
+                <td *ngIf="IfPass(e.date)" style="color: rgb(241, 156, 28);"> passed</td>
+                <td *ngIf="!IfPass(e.date)"> has not passed</td>
+                <td><button (click)="deleteMe(e._id)"><b>X</b></button></td>
+            </tr>
+        </table>
+    </div>
+<br/>
+    <div class="cardList" *ngIf="!isTableView">
+        <app-data-card *ngFor="let e of events" [event]="e" (onDelete)="handleDelete(e._id)" />
+    </div>
+</div>

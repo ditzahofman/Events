@@ -1,0 +1,10 @@
+html, body {
+    height: 100%;
+    text-align: center;
+    font-size: large;
+    width:100%;
+    background-image: url("./assets/images/events.jpg");
+    background-size: cover;
+ /* border-radius: 12%; */
+    overflow: hidden;
+}

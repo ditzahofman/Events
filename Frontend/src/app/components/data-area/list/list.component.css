@@ -1,0 +1,32 @@
+div{
+  
+}
+
+
+table{
+    position: absolute;
+    z-index: 1000;
+    top: 25%;
+  
+
+}
+table th, td,tr{
+    border: solid white 4px;
+    background-color: antiquewhite;
+    width:200px ;
+}
+select{
+    width: 200px;
+    height: 40px;
+    border: burlywood 2px solid;
+}
+
+.cardList{
+    display: flex;
+    flex-wrap: wrap;
+  margin-left: 1%;
+}
+.cardList>*{
+    margin:1%;
+}
+

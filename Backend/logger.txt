@@ -1,0 +1,34 @@
+15.6.2023, 21:32:37 	 Route /api/events not exist
+----------------------------
+15.6.2023, 21:33:31 	 event.validateSync is not a function
+----------------------------
+15.6.2023, 21:36:25 	 event.validateSync is not a function
+----------------------------
+15.6.2023, 21:36:49 	 event.save is not a function
+----------------------------
+15.6.2023, 21:39:55 	 event.validateSync is not a function
+----------------------------
+15.6.2023, 21:42:07 	 event.validateSync is not a function
+----------------------------
+15.6.2023, 21:42:09 	 event.validateSync is not a function
+----------------------------
+15.6.2023, 21:42:56 	 event.validateSync is not a function
+----------------------------
+15.6.2023, 21:42:57 	 event.validateSync is not a function
+----------------------------
+15.6.2023, 21:47:04 	 event.validateSync is not a function
+----------------------------
+15.6.2023, 21:48:03 	 EventModel validation failed: eventTypeId: Cast to ObjectId failed for value "2" (type number) at path "eventTypeId" because of "BSONError", discription: Missing Date
+----------------------------
+15.6.2023, 21:50:29 	 EventModel validation failed: eventTypeId: Cast to ObjectId failed for value "2" (type number) at path "eventTypeId" because of "BSONError", discription: Missing Discription
+----------------------------
+15.6.2023, 21:50:32 	 EventModel validation failed: eventTypeId: Cast to ObjectId failed for value "2" (type number) at path "eventTypeId" because of "BSONError", discription: Missing Discription
+----------------------------
+15.6.2023, 21:54:50 	 EventModel validation failed: discription: Missing Discription
+----------------------------
+16.6.2023, 0:57:31 	 Route /api/events/ not exist
+----------------------------
+16.6.2023, 16:25:48 	 Route /api/types/648b5fedd6d2a99e002325a9 not exist
+----------------------------
+16.6.2023, 16:26:05 	 Route /api/types/648b5fedd6d2a99e002325a9 not exist
+----------------------------

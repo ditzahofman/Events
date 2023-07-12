@@ -1,0 +1,34 @@
+ 
+        <div class="form-container">
+            <h2>Add Event</h2>
+       
+            <form (ngSubmit)="send()" ngNativeValidate>
+                <select class="form-select"  name="eventTypeId"  [(ngModel)]="event.eventTypeId" required>
+                    <option selected disabled value="">Select Event Type</option>
+                    <option *ngFor="let t of eventsTypes" [value]="t._id">{{t.eventTypeName}}</option>
+                </select> 
+                
+              <div class="form-group">
+                <label class="form-label" for="date">Date:</label>
+                <input class="form-input" type="datetime-local"  name="date" [(ngModel)]="event.date" required>
+              </div>
+        
+              <div class="form-group">
+                <label class="form-label" for="description">Description:</label>
+                <input class="form-input" type="text"  name="description" [(ngModel)]="event.description" required>
+              </div>
+        
+              <div class="form-group">
+                <label class="form-label" for="address">Address:</label>
+                <input class="form-input" type="text"  name="address" [(ngModel)]="event.adress" required>
+              </div>
+        
+              <div class="form-group">
+                <label class="form-label" for="participants">Participants:</label>
+                <input class="form-input" type="number"  name="participants"[(ngModel)]="event.participants" required>
+              </div>
+        
+              <button class="form-button" type="submit">Submit</button>
+            
+            </form>
+       
